@@ -52,6 +52,8 @@ select1.addEventListener("input", hacerSegundoSelect,false);
 function hacerSegundoSelect(){
     let select2= document.getElementById("sel2");
 
+    select2.innerHTML= "<option>No seleccionado</option>";
+
     let op1= document.createElement("option");
     let op2= document.createElement("option");
     let op3= document.createElement("option");
