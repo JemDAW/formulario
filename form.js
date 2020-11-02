@@ -45,3 +45,34 @@ function esAnagrama(text1, text2){
   }
 
 //4
+var select1= document.getElementById("sel1");
+
+select1.addEventListener("input", hacerSegundoSelect,false);
+
+function hacerSegundoSelect(){
+    let select2= document.getElementById("sel2");
+
+    let op1= document.createElement("option");
+    let op2= document.createElement("option");
+    let op3= document.createElement("option");
+
+    if(select1.value == 'a'){
+        op1.innerText = "Alicante";
+        op2.innerText = "Elche";
+        op3.innerText = "Petrer";
+    }else if(select1.value == 'c'){
+        op1.innerText = "Castellón";
+        op2.innerText = "Oropesa";
+        op3.innerText = "Vinaroz";
+    }else{
+        op1.innerText = "Valencia";
+        op2.innerText = "Xativa";
+        op3.innerText = "Torrent";
+    }
+
+    select2.appendChild(op1);
+    select2.appendChild(op2);
+    select2.appendChild(op3);
+
+
+}
